@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function CoffeeBeat() {
+function CoffeeBeat({ playMode }) {
   const myStyle = {
     backgroundImage: `url(https://i.imgur.com/TVdmm2k.gif)`,
     height: `100vh`,
@@ -18,7 +18,7 @@ function CoffeeBeat() {
       <div className="coffeePage" style={myStyle}></div>
       <ReactPlayer
         url="https://youtu.be/qj9NFFvJ7o4"
-        playing={true}
+        playing={playMode}
         width="0"
         height="0"
         volume={0.5}

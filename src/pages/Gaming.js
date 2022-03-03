@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Gaming() {
+function Gaming({ playMode }) {
   const myStyle = {
     backgroundImage: `url(https://steamuserimages-a.akamaihd.net/ugc/1762567534089351845/B75DF44ACD6F7ED4C57BD2875CCBD39B0A6AC46E/?imw=512&imh=287&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)`,
     height: `100vh`,
@@ -17,7 +17,7 @@ function Gaming() {
       <div className="gamingPage" style={myStyle}></div>
       <ReactPlayer
         url="https://youtu.be/FFfdyV8gnWk"
-        playing={true}
+        playing={playMode}
         width="0"
         height="0"
         volume={0.5}

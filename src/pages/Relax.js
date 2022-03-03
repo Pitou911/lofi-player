@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Relax() {
+function Relax({ playMode }) {
   const myStyle = {
     backgroundImage: `url(https://wallpaperaccess.com/full/2471283.gif)`,
     height: `100vh`,
@@ -17,7 +17,7 @@ function Relax() {
       <div className="relaxPage" style={myStyle}></div>
       <ReactPlayer
         url="https://youtu.be/QgbGUeyjQ1A"
-        playing={true}
+        playing={playMode}
         width="0"
         height="0"
         volume={0.5}

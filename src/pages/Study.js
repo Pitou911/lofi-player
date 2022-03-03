@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Study() {
+function Study({ playMode }) {
   const myStyle = {
     backgroundImage: `url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/9afe0493484903.5e66500f8dea4.gif)`,
     height: `100vh`,
@@ -17,7 +17,9 @@ function Study() {
       <div className="studyPage" style={myStyle}></div>
       <ReactPlayer
         url="https://youtu.be/FjHGZj2IjBk"
-        playing={true}
+        playing={playMode}
+        width="0"
+        height="0"
         volume={0.5}
       />
     </>

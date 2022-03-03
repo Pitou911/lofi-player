@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Oldies() {
+function Oldies({ playMode }) {
   const myStyle = {
     backgroundImage: `url(https://i.imgur.com/ugd1GkO.gif)`,
     height: `100vh`,
@@ -16,8 +16,8 @@ function Oldies() {
     <>
       <div className="oldiesPage" style={myStyle}></div>
       <ReactPlayer
-        url="https://youtu.be/UxjPuxBVZ_Y"
-        playing={true}
+        url="https://www.youtube.com/watch?v=nR-Zen2s2Qw"
+        playing={playMode}
         width="0"
         height="0"
         volume={0.5}

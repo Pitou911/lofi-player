@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Coding() {
+function Coding({ playMode }) {
   const myStyle = {
     backgroundImage: `url(https://wallpaperaccess.com/full/849790.gif)`,
     height: `100vh`,
@@ -16,8 +16,8 @@ function Coding() {
     <>
       <div className="codingPage" style={myStyle}></div>
       <ReactPlayer
-        url="https://youtu.be/_ITiwPMUzho"
-        playing={true}
+        url="https://www.youtube.com/watch?v=esX7SFtEjHg"
+        playing={playMode}
         width="0"
         height="0"
         volume={0.5}

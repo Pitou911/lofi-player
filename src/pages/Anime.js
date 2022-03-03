@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Anime() {
+function Anime({ playMode }) {
   const myStyle = {
     backgroundImage: `url(https://wallpaperaccess.com/full/869910.gif)`,
     height: `100vh`,
@@ -16,8 +16,8 @@ function Anime() {
     <>
       <div className="animePage" style={myStyle}></div>
       <ReactPlayer
-        url="https://youtu.be/GNWLILeztaI"
-        playing={true}
+        url="https://www.youtube.com/watch?v=WDXPJWIgX-o"
+        playing={playMode}
         width="0"
         height="0"
         volume={0.5}
