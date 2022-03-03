@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Kaushan Script", cursive;
+}
+
+.navbar {
+  background-color: transparent;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  letter-spacing: 2.5px;
+}
+.Sidebar {
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(0, 255, 255, 0.007);
+  /* background-color: transparent; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* background-color: black; */
+}
+
+.row {
+  width: 100%;
+  padding: 10px;
+  height: 70px;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  /* justify-content: center; */
+  padding-left: 20px;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+}
+.row a {
+  text-decoration: none !important;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+  padding-left: 5px;
+  border-radius: 4px;
+  transition: all 200ms;
+}
+.row a:hover {
+  background-color: rgba(0, 255, 255, 0.603);
+}
+
+span {
+  margin-left: 16px;
+}
+#dot {
+  font-size: 1rem;
+  font-weight: bold;
+}
