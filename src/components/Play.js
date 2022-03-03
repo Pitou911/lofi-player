@@ -14,14 +14,15 @@ function Play({ setPlayMode }) {
   // };
 
   //var pause = document.querySelector(".pause");
-  var play = document.querySelector(".play");
 
   const [playing, setPlaying] = useState(`play active`);
   const [pausing, setPausing] = useState(`pause`);
-  let playHandler = () => {
-    if (play.classList.contains("active")) {
+
+  const playHandler = () => {
+    if (playing === `play active`) {
       setPlaying("play");
       setPausing(`pause active`);
+      console.log("hehe");
     } else {
       setPlaying(`play active`);
       setPausing("pause");
@@ -36,7 +37,7 @@ function Play({ setPlayMode }) {
     //     {text}
     //   </button>
     // </div>
-    <div class="container">
+    <div className="container">
       <div id="app" onClick={playHandler}>
         <div className={pausing}>
           <div className="line line_1"></div>
