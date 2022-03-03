@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 function Play({ setPlayMode }) {
   let [playmode, setPlaymode] = useState(false);
   // let [text, setText] = useState("Pause");
@@ -32,21 +33,13 @@ function Play({ setPlayMode }) {
   };
 
   return (
-    // <div className="playContainer">
-    //   <button className="playButton" onClick={changeHandler}>
-    //     {text}
-    //   </button>
-    // </div>
     <div className="container">
       <div id="app" onClick={playHandler}>
         <div className={pausing}>
-          <div className="line line_1"></div>
-          <div className="line line_2"></div>
+          <FontAwesomeIcon className="playBtn" icon={faPlay} />
         </div>
         <div className={playing}>
-          <div className="line line_1"></div>
-          <div className="line line_2"></div>
-          <div className="line line_3"></div>
+          <FontAwesomeIcon className="pauseBtn" icon={faPause} />
         </div>
       </div>
     </div>
