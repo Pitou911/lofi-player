@@ -16,11 +16,12 @@ function Gaming({ playMode }) {
     <>
       <div className="gamingPage" style={myStyle}></div>
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=42M3esYyHdw"
+        url="https://youtu.be/FFfdyV8gnWk"
         playing={playMode}
         width="0"
         height="0"
         volume={0.5}
+        loop={1}
       />
     </>
   );
