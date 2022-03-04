@@ -12,7 +12,7 @@ function SideBar() {
   return (
     <>
       <div className="navbar">
-        <h1 className="title">Lofi Player</h1>
+        <h1 className="title">LofiPlayer</h1>
       </div>
       <nav className="Sidebar">
         <ul className="SidebarList">
