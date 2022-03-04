@@ -5,7 +5,10 @@ import "../App.css";
 import { SidebarData } from "./SidebarData";
 function SideBar() {
   const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/8");
-  // const audio = new Audio({ mouse });
+
+  const clickHandler = () => {
+    audio.play();
+  };
   return (
     <>
       <div className="navbar">
@@ -16,7 +19,7 @@ function SideBar() {
           {SidebarData.map((val, key) => {
             return (
               <li key={val.id} className="row">
-                <Link to={val.link} onClick={() => audio.play()}>
+                <Link to={val.link} onClick={clickHandler}>
                   <span className="item">
                     <span id="dot">. </span>
                     {val.title}

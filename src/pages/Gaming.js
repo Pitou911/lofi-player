@@ -16,7 +16,7 @@ function Gaming({ playMode }) {
     <>
       <div className="gamingPage" style={myStyle}></div>
       <ReactPlayer
-        url="https://youtu.be/FFfdyV8gnWk"
+        url="https://www.youtube.com/watch?v=42M3esYyHdw"
         playing={playMode}
         width="0"
         height="0"

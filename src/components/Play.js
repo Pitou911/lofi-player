@@ -3,18 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 function Play({ setPlayMode }) {
   let [playmode, setPlaymode] = useState(false);
-  // let [text, setText] = useState("Pause");
-  // const changeHandler = () => {
-  //   if (play) {
-  //     setText("Pause");
-  //   } else {
-  //     setText("Play");
-  //   }
-  //   setPlayMode(play);
-  //   setPlay(!play);
-  // };
-
-  //var pause = document.querySelector(".pause");
 
   const [playing, setPlaying] = useState(`play active`);
   const [pausing, setPausing] = useState(`pause`);

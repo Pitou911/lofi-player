@@ -24,6 +24,9 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
+          <Route path="/home">
+            <Home playMode={playMode} />
+          </Route>
           <Route path="/lofigirl">
             <LofiGirl playMode={playMode} />
           </Route>
