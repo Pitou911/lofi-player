@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function CoffeeBeat({ playMode }) {
+function CoffeeBeat({ playMode, vol, mute }) {
   const myStyle = {
     backgroundImage: `url(https://i.imgur.com/TVdmm2k.gif)`,
     height: `100vh`,
@@ -21,7 +21,8 @@ function CoffeeBeat({ playMode }) {
         playing={playMode}
         width="0"
         height="0"
-        volume={0.5}
+        volume={vol / 100}
+        muted={mute}
       />
     </>
   );

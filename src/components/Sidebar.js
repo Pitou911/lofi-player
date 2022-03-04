@@ -21,7 +21,7 @@ function SideBar() {
               <li key={val.id} className="row">
                 <Link to={val.link} onClick={clickHandler}>
                   <span className="item">
-                    <span id="dot">. </span>
+                    {/* <span id="dot">. </span> */}
                     {val.title}
                   </span>
                 </Link>

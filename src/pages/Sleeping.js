@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Sleeping({ playMode }) {
+function Sleeping({ playMode, vol, mute }) {
   const myStyle = {
     backgroundImage: `url(https://64.media.tumblr.com/821bf6fb956e00922bd11a5f6dab47b8/tumblr_pboqhrprnt1xqkqqwo2_r1_1280.gifv)`,
     height: `100vh`,
@@ -20,7 +20,8 @@ function Sleeping({ playMode }) {
         playing={playMode}
         width="0"
         height="0"
-        volume={0.5}
+        volume={vol / 100}
+        muted={mute}
       />
     </>
   );

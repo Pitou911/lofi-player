@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Oldies({ playMode }) {
+function Oldies({ playMode, vol, mute }) {
   const myStyle = {
     backgroundImage: `url(https://i.imgur.com/ugd1GkO.gif)`,
     height: `100vh`,
@@ -20,7 +20,8 @@ function Oldies({ playMode }) {
         playing={playMode}
         width="0"
         height="0"
-        volume={0.5}
+        volume={vol / 100}
+        muted={mute}
       />
     </>
   );

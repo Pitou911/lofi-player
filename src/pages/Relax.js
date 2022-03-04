@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Relax({ playMode }) {
+function Relax({ playMode, vol, mute }) {
   const myStyle = {
     backgroundImage: `url(https://wallpaperaccess.com/full/2471283.gif)`,
     height: `100vh`,
@@ -20,7 +20,8 @@ function Relax({ playMode }) {
         playing={playMode}
         width="0"
         height="0"
-        volume={0.5}
+        volume={vol / 100}
+        muted={mute}
       />
     </>
   );

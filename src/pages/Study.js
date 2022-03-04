@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-function Study({ playMode }) {
+function Study({ playMode, vol, mute }) {
   const myStyle = {
     backgroundImage: `url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/9afe0493484903.5e66500f8dea4.gif)`,
     height: `100vh`,
@@ -20,7 +20,8 @@ function Study({ playMode }) {
         playing={playMode}
         width="0"
         height="0"
-        volume={0.5}
+        volume={vol / 100}
+        muted={mute}
       />
     </>
   );

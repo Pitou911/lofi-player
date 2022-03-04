@@ -16,6 +16,8 @@ import Play from "./components/Play";
 
 function App() {
   const [playMode, setPlayMode] = useState(true);
+  const [vol, setVol] = useState("100");
+  const [mute, setMute] = useState(false);
   return (
     <div className="App">
       <Router>
@@ -25,37 +27,37 @@ function App() {
             <Home />
           </Route>
           <Route path="/home">
-            <Home playMode={playMode} />
+            <Home playMode={playMode} vol={vol} mute={mute} />
           </Route>
           <Route path="/lofigirl">
-            <LofiGirl playMode={playMode} />
+            <LofiGirl playMode={playMode} vol={vol} mute={mute} />
           </Route>
           <Route path="/coffeebeat">
-            <CoffeeBeat playMode={playMode} />
+            <CoffeeBeat playMode={playMode} vol={vol} mute={mute} />
           </Route>
           <Route path="/latenight">
-            <Coding playMode={playMode} />
+            <Coding playMode={playMode} vol={vol} mute={mute} />
           </Route>
           <Route path="/relax">
-            <Relax playMode={playMode} />
+            <Relax playMode={playMode} vol={vol} mute={mute} />
           </Route>
           <Route path="/oldies">
-            <Oldies playMode={playMode} />
+            <Oldies playMode={playMode} vol={vol} mute={mute} />
           </Route>
           <Route path="/anime">
-            <Anime playMode={playMode} />
+            <Anime playMode={playMode} vol={vol} mute={mute} />
           </Route>
           <Route path="/study">
-            <Study playMode={playMode} />
+            <Study playMode={playMode} vol={vol} mute={mute} />
           </Route>
           <Route path="/sleeping">
-            <Sleeping playMode={playMode} />
+            <Sleeping playMode={playMode} vol={vol} mute={mute} />
           </Route>
           <Route path="/gaming">
-            <Gaming playMode={playMode} />
+            <Gaming playMode={playMode} vol={vol} mute={mute} />
           </Route>
         </Switch>
-        <Play setPlayMode={setPlayMode} />
+        <Play setPlayMode={setPlayMode} setVol={setVol} setMute={setMute} />
       </Router>
     </div>
   );

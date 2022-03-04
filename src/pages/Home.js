@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 //import homegif from "./../assets/intro.gif";
-function Home({ playMode }) {
+function Home({ playMode, vol, mute }) {
   const myStyle = {
     backgroundImage: `url(https://cdnb.artstation.com/p/assets/images/images/035/834/987/original/jordan-pak-lofi.gif?1616014770)`,
     height: `100vh`,
@@ -21,7 +21,8 @@ function Home({ playMode }) {
         playing={playMode}
         width="0"
         height="0"
-        volume={0.5}
+        volume={vol / 100}
+        muted={mute}
       />
     </>
   );
