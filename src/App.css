@@ -17,41 +17,59 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
-  letter-spacing: 4px;
+  color: white;
 }
-.Sidebar {
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: transparent;
+  width: 350px;
   height: 100vh;
-  width: 15%;
-  min-width: 300px;
-  background-color: rgba(0, 255, 255, 0.007);
-  /* background-color: transparent; */
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 800ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+.menu-bar {
+  font-size: 1.5rem;
+  background: none;
+  position: fixed;
+  left: -100%;
+  top: 12px;
+}
+.menu-bar.show {
+  left: 2rem;
+  top: 12px;
+}
+/* .nav-item {
+  display: flex;
+  padding: 10px 5px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.nav-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  /* background-color: black; */
+  padding: 8px 0 8px 16px;
+  height: 50px;
+  list-style: none;
 }
-
-.row {
-  width: 120%;
-  padding: 10px;
-  height: 70px;
-  margin: 0%;
-  display: flex;
-  flex-direction: row;
-  color: rgb(255, 255, 255);
-  /* justify-content: center; */
-  padding-left: 20px;
-  align-items: center;
-  font-family: sans-serif;
-  font-size: 1.1rem;
-}
-.row a {
-  text-decoration: none !important;
+.nav-item a {
+  text-decoration: none;
   font-size: 1.2rem;
   color: #fff;
   width: 95%;
@@ -60,15 +78,34 @@
   align-items: center;
   padding: 5px 0px;
   padding-left: 5px;
-  border-radius: 8px;
-  transition: all 200ms;
+  border-radius: 4px;
 }
-.row a:hover {
-  background-color: rgba(0, 255, 255, 0.247);
+
+.nav-item a:hover {
+  background-color: #1a85ff70;
+}
+
+.nav-logo {
+  filter: brightness(2);
+  width: 20px;
+  height: 20px;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 span {
-  margin-left: 12px;
+  margin-left: 16px;
 }
 /* #dot {
   font-size: 1rem;
