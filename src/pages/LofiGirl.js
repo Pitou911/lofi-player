@@ -17,7 +17,7 @@ function LofiGirl({ playMode, vol, mute }) {
     <>
       <div className="lofiPage" style={myStyle}></div>
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=5qap5aO4i9A"
+        url="https://www.youtube.com/watch?v=MNPtqHVGSJQ"
         playing={playMode}
         width="0"
         height="0"

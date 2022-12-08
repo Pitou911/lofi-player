@@ -16,7 +16,7 @@ function Relax({ playMode, vol, mute }) {
     <>
       <div className="relaxPage" style={myStyle}></div>
       <ReactPlayer
-        url="https://youtu.be/QgbGUeyjQ1A"
+        url="https://www.youtube.com/watch?v=d2ShwS109Ts&t=4s"
         playing={playMode}
         width="0"
         height="0"

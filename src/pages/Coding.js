@@ -16,7 +16,7 @@ function Coding({ playMode, vol, mute }) {
     <>
       <div className="codingPage" style={myStyle}></div>
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=esX7SFtEjHg"
+        url="https://www.youtube.com/watch?v=_ITiwPMUzho&t=698s"
         playing={playMode}
         width="0"
         height="0"
