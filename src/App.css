@@ -48,10 +48,12 @@
   position: fixed;
   left: -100%;
   top: 12px;
+  fill: white;
 }
 .menu-bar.show {
   left: 2rem;
   top: 12px;
+  fill: white !important;
 }
 /* .nav-item {
   display: flex;

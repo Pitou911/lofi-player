@@ -15,7 +15,7 @@ function SideBar() {
     <>
       <div className="navbar">
         <Link to="#" className={sidebar ? "menu-bar" : "menu-bar show"}>
-          <FaIcons.FaBars onClick={showSidebar} />
+          <FaIcons.FaBars fill="white" onClick={showSidebar} />
         </Link>
         <h1 className="title">Lofi Player</h1>
       </div>
@@ -24,7 +24,7 @@ function SideBar() {
         <ul className="nav-menu-items" onClick={showSidebar}>
           <li className="navbar-toggle">
             <Link to="#" className="menu-bars">
-              <AiIcons.AiOutlineClose />
+              <AiIcons.AiOutlineClose fill="white"/>
             </Link>
           </li>
 
